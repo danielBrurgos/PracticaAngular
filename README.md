@@ -1,82 +1,52 @@
-# PracticaRouting
+Manual de Proyecto: Practica de Enrutamiento y Componentes en Angular
+Este proyecto fue generado con Angular CLI version 21.2.7.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Servidor de Desarrollo
+Para iniciar el servidor local, ejecuta:
 
-## Development server
+Bash
+npx ng serve
+Una vez que el servidor este corriendo, abre tu navegador en http://localhost:4200/. La aplicacion se recargara automaticamente cada vez que modifiques los archivos fuente.
 
-To start a local development server, run:
+Detalle de Practicas Realizadas
+1. Sistema de Rutas y Navegacion (SPA)
+Se implemento una Single Page Application (SPA) utilizando Angular Router. Esto permite la navegacion instantanea entre las secciones de Inicio, Servicios, Contacto y Nosotros sin recargar el navegador.
 
-```bash
-ng serve
-```
+2. Componentes Reutilizables (Tarjetas de Presentacion)
+Se desarrollo un componente modular llamado Tarjeta.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Decorador @Input: Permite recibir datos de forma dinamica (nombre y edad) desde un componente padre.
 
-## Code scaffolding
+Manejo de Eventos: Cada tarjeta posee su propio contador de likes independiente mediante vinculacion de eventos (Event Binding).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Estilos Profesionales: Se aplico un diseño moderno con efectos de sombra y transiciones de escala al interactuar.
 
-```bash
-ng generate component component-name
-```
+<img width="1224" height="685" alt="image" src="https://github.com/user-attachments/assets/cc75d454-d9e6-49fa-b41e-821deeefd3aa" />
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+3. Galeria de Fotos Interactiva (Ultima Practica)
+Como requerimiento para una agencia digital, se añadio una seccion de galeria dinamica que permite la interaccion avanzada con el usuario.
 
-## Building
+Funcionalidades implementadas:
 
-To build the project run:
+Visualizacion en Grid: Diseno organizado en cuadricula responsiva para las imagenes.
 
-```bash
-ng build
-```
+Formulario de Registro: Capacidad de agregar nuevas fotos en tiempo real mediante URL y titulo usando ngModel.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Sistema de Likes: Funcion interactiva para dar Me gusta a cada fotografia individualmente.
 
-## Running unit tests
+Eliminacion de Registros: Opcion para borrar fotos del arreglo de forma instantanea.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Contador Global: Logica programada para mostrar la suma total de todos los likes recibidos en la galeria completa.
 
-```bash
-ng test
-```
+Persistencia en Sesion: Los datos se mantienen activos durante la navegacion mediante el manejo de arreglos en memoria de TypeScript.
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+<img width="1232" height="805" alt="image" src="https://github.com/user-attachments/assets/255b16cc-8a09-40b7-ad49-d7546f10e8af" />
 
-```bash
-ng e2e
-```
+Instrucciones de Ejecucion
+Instalar dependencias: ```bash
+npm install
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-Modulo: Galeria de Fotos Interactiva (Agencia Digital)
-Se ha implementado una nueva funcionalidad de galeria dinamica para cumplir con los requerimientos de la agencia digital. Esta seccion demuestra el manejo de arreglos de objetos y persistencia de datos durante la sesion del usuario.
-
-Caracteristicas de la Galeria:
-Visualizacion en Grid: Estructura de cuadricula dinamica para la visualizacion de imagenes.
-
-Gestion de Datos (CRUD): Formulario funcional para añadir nuevas fotografias mediante titulo y URL, con capacidad de eliminacion instantanea.
-
-Interaccion Dinamica: Sistema de Me gusta (likes) individual por cada fotografia utilizando vinculacion de eventos.
-
-Logica Acumulativa: Contador global que calcula en tiempo real el total de likes acumulados en toda la galeria.
-
-Persistencia en Sesion: Gestion de estado local mediante arreglos de TypeScript sin necesidad de base de datos externa.
-
-Componentes y Logica Utilizada:
-Directivas: Uso de *ngFor para el renderizado de la lista y [(ngModel)] para el manejo de formularios reactivos.
-
-Interfaces: Definicion de modelos de datos estrictos para asegurar la integridad de cada fotografia.
-
-Estilos: Diseño responsivo con efectos visuales modernos para una experiencia de usuario profesional.
-
-<img width="1231" height="1091" alt="image" src="https://github.com/user-attachments/assets/4f58eada-65df-4c78-8c0e-14c1bfcfe86f" />
+Correr aplicacion: ```bash
+npx ng serve
