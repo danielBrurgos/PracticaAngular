@@ -1,0 +1,21 @@
+<div class="galeria-container">
+  <h2>Galería Interactiva</h2>
+  <p class="total-badge">Total de Likes Globales: {{ totalLikes }}</p>
+
+  <div class="form-agregar">
+    <input [(ngModel)]="nuevoTitulo" placeholder="Título de la foto">
+    <input [(ngModel)]="nuevaUrl" placeholder="URL de la imagen">
+    <button (click) ="agregarFoto()">Agregar a Galería</button>
+  </div>
+
+  <div class="grid-fotos">
+    <div *ngFor="let foto of listaFotos" class="foto-card">
+      <img [src]="foto.url" [alt]="foto.titulo">
+      <h3>{{ foto.titulo }}</h3>
+      <div class="acciones">
+        <button class="btn-like" (click)="darLike(foto.id)">❤️ {{ foto.likes }}</button>
+        <button class="btn-delete" (click)="eliminarFoto(foto.id)">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>

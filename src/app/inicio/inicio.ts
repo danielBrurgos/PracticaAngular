@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TarjetaComponent } from '../tarjeta/tarjeta'; 
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [],
-  template: '<h1>🏠 Página de Inicio</h1>',
+  imports: [TarjetaComponent], 
+  templateUrl: './inicio.html',
 })
-export class InicioComponent {} // <--- ESTE NOMBRE ES EL QUE IMPORTA
+export class InicioComponent {}
