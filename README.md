@@ -21,7 +21,8 @@ Manejo de Eventos: Cada tarjeta posee su propio contador de likes independiente 
 
 Estilos Profesionales: Se aplico un diseño moderno con efectos de sombra y transiciones de escala al interactuar.
 
-<img width="1224" height="685" alt="image" src="https://github.com/user-attachments/assets/cc75d454-d9e6-49fa-b41e-821deeefd3aa" />
+<img width="1203" height="734" alt="image" src="https://github.com/user-attachments/assets/127472d1-cb59-4ad1-b590-2cb076be2ed5" />
+
 
 
 3. Galeria de Fotos Interactiva (Ultima Practica)
@@ -42,7 +43,8 @@ Contador Global: Logica programada para mostrar la suma total de todos los likes
 Persistencia en Sesion: Los datos se mantienen activos durante la navegacion mediante el manejo de arreglos en memoria de TypeScript.
 
 
-<img width="1232" height="805" alt="image" src="https://github.com/user-attachments/assets/255b16cc-8a09-40b7-ad49-d7546f10e8af" />
+<img width="1237" height="798" alt="image" src="https://github.com/user-attachments/assets/4c722dd9-ef02-4808-aab2-42242c82e8f7" />
+
 
 Instrucciones de Ejecucion
 Instalar dependencias: ```bash
